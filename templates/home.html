@@ -12,7 +12,7 @@
 		<div id="brandname">
 			
 		</div>
-		<h3>Text Classification for SARS-Cov-2 Inhibitor Discovery</h3>
+		<h3 style="text-align: center">Text Classification for SARS-Cov-2 Inhibitor Discovery</h3>
 		
 	</div>
 	</header>
@@ -20,7 +20,7 @@
 	<div class="ml-container">
 
 		<form action="{{ url_for('predict')}}" method="POST">
-		<p>Under the hood this web-app uses a text classifier (Linear Support Vector Machine) to classify research papers for possible information on inhibitors of SARS-Cov-2. The model was trained on "1776" titles of research papers which were annotated manually as having potential information for SARS-Cov-2 inhibtors (or not) by a group of curators under the SAVIOR Project. Training data was split 40:60 along with stratification. Vectorization of the strings was performed using TFIDF Vectorizer and ngrams of length three were used. Feature selection was performed using Chi-Square Statistical Test (top 1000 features selected). <br> <br> Enter the title/abstract of a research paper related to SARS-Cov-2 for a prediction.      </p>
+		<p style="text-align: center">Under the hood this web-app uses a text classifier (Linear Support Vector Machine) to classify research papers for possible information on inhibitors of SARS-Cov-2. The model was trained on "1776" titles of research papers which were annotated manually as having potential information for SARS-Cov-2 inhibtors (or not) by a group of curators under the SAVIOR Project. Training data was split 40:60 along with stratification. Vectorization of the strings was performed using TFIDF Vectorizer and ngrams of length three were used. Feature selection was performed using Chi-Square Statistical Test (top 1000 features selected). <br> <br> Enter the title/abstract of a research paper related to SARS-Cov-2 for a prediction.      </p>
 		<!-- <input type="text" name="comment"/> -->
 		<textarea name="message" rows="6" cols="50"></textarea>
 		<br/>
